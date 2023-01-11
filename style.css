@@ -1,3 +1,8 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
 .form-control-dark {
     border-color: var(--bs-gray);
 }
@@ -17,4 +22,21 @@ main{
 
 .weboldalcim{
   color: white;
+}
+.kartya-magyarazo-ikonok, .card-text{
+  display: inline-block;
+  margin: 0;
+}
+
+.kartya-magyarazo-ikonok{
+  width: 20px;
+  height: 20px;
+}
+
+.kartya-magyarazo-ikonok-szoveg{
+  padding-left: 20px;
+}
+
+.card{
+  margin-bottom: 1rem;
 }
