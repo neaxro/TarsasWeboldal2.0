@@ -4,7 +4,15 @@ $(document).ready(function(){
 
         if(szoveg.length > 0){
             $(".card").hide();
-            $(".card:contains("+szoveg+")").show();
+            $(".card").each(function (index){
+                let adottSzoveg = $(this).find(".card-body > h5").text().toUpperCase();
+                
+                if(adottSzoveg.includes(szoveg)){
+                    $(this).show();
+                }
+
+                //console.log(adottSzoveg + " <--? " + szoveg + " : " + adottSzoveg.includes(szoveg));
+            });
         }
         else{
             $(".card").show();
