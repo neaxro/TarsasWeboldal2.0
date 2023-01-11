@@ -11,6 +11,9 @@
     <!-- Saját stílusok CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- JQuery import -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <title>Hello, world!</title>
 
   </head>
@@ -35,7 +38,8 @@
     </header>
     </main>
   <section class="container py-3">
-  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+
+  <div class="row">
     
     <div class="col">
       <div class="card" style="width: 18rem;">
@@ -43,6 +47,8 @@
         <img src="Forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
 
         <div class="card-body">
+          <h5>Exploding Kittens</h5>
+          <hr>
           <img src="Forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
           <hr>
           <img src="Forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
@@ -60,6 +66,8 @@
         <img src="Forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
 
         <div class="card-body">
+          <h5>Exploding Dogs</h5>
+          <hr>
           <img src="Forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
           <hr>
           <img src="Forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
@@ -77,6 +85,8 @@
         <img src="Forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
 
         <div class="card-body">
+          <h5>Bang!</h5>
+          <hr>
           <img src="Forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
           <hr>
           <img src="Forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
@@ -94,40 +104,8 @@
         <img src="Forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
 
         <div class="card-body">
-          <img src="Forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
+          <h5>Schottentoten</h5>
           <hr>
-          <img src="Forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
-          <hr>
-          <img src="Forrasok/icon_eletkor.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">7+</p>
-          <hr>
-          <p class="card-text">Some quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        
-        <img src="Forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
-
-        <div class="card-body">
-          <img src="Forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
-          <hr>
-          <img src="Forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
-          <hr>
-          <img src="Forrasok/icon_eletkor.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">7+</p>
-          <hr>
-          <p class="card-text">Some quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        
-        <img src="Forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
-
-        <div class="card-body">
           <img src="Forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
           <hr>
           <img src="Forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
@@ -142,6 +120,6 @@
   </div>
   </div>
 
-    
+    <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
