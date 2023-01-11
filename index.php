@@ -30,7 +30,7 @@
         
         <div class="align-items-center col-12 col-md-8 d-inline-block">
           <form class="w-100 me-3" role="search">
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="kereso">
           </form>
         </div>
 
