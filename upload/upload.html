@@ -33,72 +33,65 @@
             <div class="form-box-fejlec card-header">
               <h3>Új Társasjáték</h3>
             </div>
+            
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+              <div class="form-group px-3">
+                <!-- Címe -->
+                <label for="tarsasCime">Társas neve</label>
+                <input name="cim" type="text" class="form-control" id="tarsasCime" aria-describedby="cimhelp" placeholder="Társasjáték neve">
+                <small id="cimhelp" class="form-text text-muted">Maximum 30 karakter hosszúságú lehet a cím!</small>
+                <hr>
 
-            <div class="form-group px-3">
-              <!-- Címe -->
-              <label for="tarsasCime">Társas neve</label>
-              <input type="text" class="form-control" id="tarsasCime" aria-describedby="cimhelp" placeholder="Társasjáték neve">
-              <small id="cimhelp" class="form-text text-muted">Maximum ... hosszúságú lehet a cím!</small>
-              <hr>
+                <!-- Játékosszám -->
+                <label for="jatekosszam">Játékosszám</label>
+                <div class="row">
+                  <!-- Min -->
+                  <div class="col">
+                    <input name="min_jatekos" type="text" class="form-control" id="minjatekosszam" aria-describedby="" placeholder="Minimum Játékosszám">
+                  </div>
 
-              <!-- Játékosszám -->
-              <label for="jatekosszam">Játékosszám</label>
-              <div class="row">
-                <!-- Min -->
-                <div class="col">
-                  <input type="text" class="form-control" id="minjatekosszam" aria-describedby="" placeholder="Minimum Játékosszám">
+                  <!-- Max -->
+                  <div class="col">
+                    <input name="max_jatekos" type="text" class="form-control" id="maxjatekosszam" aria-describedby="" placeholder="Maximum Játékosszám">
+                  </div>
+                </div>
+                <hr>
+
+                <!-- Hossza -->
+                <label for="hossz">Időtartama</label>
+                <div class="row">
+                  <!-- Min -->
+                  <div class="col">
+                    <input name="min_hossz" type="text" class="form-control" id="minido" aria-describedby="" placeholder="Minimum Időtartam">
+                  </div>
+
+                  <!-- Max -->
+                  <div class="col">
+                    <input name="max_hossz" type="text" class="form-control" id="maxido" aria-describedby="" placeholder="Maximum Időtartam">
+                  </div>
+                </div>
+                <hr>
+
+                <!-- Korhatár -->
+                <label for="tarsasKorhatara">Minimum korhatár</label>
+                <input name="korhatar" type="text" class="form-control" id="tarsasKorhatara" aria-describedby="korhelp" placeholder="Társasjáték korhatára">
+                <small id="korhelp" class="form-text text-muted">Amennyiben nincs korhatárbesorolás 0-t adjon meg!</small>
+                <hr>
+
+                <!-- Indexkép -->
+                <div class="form-group">
+                  <label for="indexkep">Társasjáték indexképe</label>
+                  <input name="indexkep" type="file" class="form-control-file" id="indexkep">
                 </div>
 
-                <!-- Max -->
-                <div class="col">
-                  <input type="text" class="form-control" id="maxjatekosszam" aria-describedby="" placeholder="Maximum Játékosszám">
+                <!-- Submit gomb -->
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn">Hozzáadás</button>
                 </div>
               </div>
-              <hr>
-
-              <!-- Hossza -->
-              <label for="hossz">Időtartama</label>
-              <div class="row">
-                <!-- Min -->
-                <div class="col">
-                  <input type="text" class="form-control" id="minido" aria-describedby="" placeholder="Minimum Időtartam">
-                </div>
-
-                <!-- Max -->
-                <div class="col">
-                  <input type="text" class="form-control" id="maxido" aria-describedby="" placeholder="Maximum Időtartam">
-                </div>
-              </div>
-              <hr>
-
-              <!-- Korhatár -->
-              <label for="tarsasKorhatara">Minimum korhatár</label>
-              <input type="text" class="form-control" id="tarsasKorhatara" aria-describedby="korhelp" placeholder="Társasjáték korhatára">
-              <small id="korhelp" class="form-text text-muted">Amennyiben nincs korhatárbesorolás 0-t adjon meg!</small>
-              <hr>
-              
-              <!-- Indexkép -->
-              <div class="form-group">
-                <label for="indexkep">Társasjáték indexképe</label>
-                <input type="file" class="form-control-file" id="indexkep">
-              </div>
-
-              <!-- Submit gomb -->
-              <div class="d-flex justify-content-center">
-                <button type="submit" class="btn">Hozzáadás</button>
-              </div>
-            </div>
-
+            </form>
 
           </div>
         </section>
-
-        <form action="upload.php" method="post">
-            <label for="cim">Cím:</label>
-            <input type="text" name="jatek_cim" id="cim">
-
-            <button type="submit" value="post">Küldés</button>
-        </form>
-
     </body>
 </html>
