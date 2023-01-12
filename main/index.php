@@ -22,20 +22,20 @@
     <main>
       <!-- Oldal fejléce -->
       <header class="py-3 mb-3 border-bottom">
-      <div class="container-fluid d-grid gap-3 align-items-center row" style="grid-template-columns: 1fr 2fr;">
+        <div class="container-fluid d-grid gap-3 align-items-center row" style="grid-template-columns: 1fr 2fr;">
 
-        <div class="align-items-center col-4 d-none d-md-inline-block">
-          <h1 class="weboldalcim">Társasjátékok</h1>
-        </div>
-        
-        <div class="align-items-center col-12 col-md-8 d-inline-block">
-          <form class="w-100 me-3" role="search">
-            <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="kereso">
-          </form>
-        </div>
+          <div class="align-items-center col-4 d-none d-md-inline-block">
+            <h1 class="weboldalcim">Társasjátékok</h1>
+          </div>
+          
+          <div class="align-items-center col-12 col-md-8 d-inline-block">
+            <form class="w-100 me-3" role="search">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="kereso">
+            </form>
+          </div>
 
-      </div>
-    </header>
+        </div>
+      </header>
     </main>
   <section class="container py-3">
 

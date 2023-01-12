@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Saját stílusok CSS -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <main>
+            <!-- Oldal fejléce -->
+            <header class="py-3 mb-3 border-bottom">
+              <div class="container-fluid d-grid gap-3 align-items-center row" style="grid-template-columns: 1fr 2fr;">
+      
+                <div class="align-items-centerk col">
+                  <h1 class="weboldalcim">Társasjátékok hozzáadása</h1>
+                </div>
+
+              </div>
+            </header>
+          </main>
+
+        <form action="upload.php" method="post">
+            <label for="cim">Cím:</label>
+            <input type="text" name="jatek_cim" id="cim">
+
+            <button type="submit" value="post">Küldés</button>
+        </form>
+
+    </body>
+</html>
