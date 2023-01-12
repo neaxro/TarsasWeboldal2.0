@@ -25,7 +25,69 @@
 
               </div>
             </header>
-          </main>
+        </main>
+
+        <section>
+          <div class="form-box card">
+
+            <div class="form-box-fejlec card-header">
+              <h3>Új Társasjáték</h3>
+            </div>
+
+            <div class="form-group px-3">
+              <!-- Címe -->
+              <label for="tarsasCime">Társas neve</label>
+              <input type="text" class="form-control" id="tarsasCime" aria-describedby="cimhelp" placeholder="Társasjáték neve">
+              <small id="cimhelp" class="form-text text-muted">Maximum ... hosszúságú lehet a cím!</small>
+
+              <!-- Játékosszám -->
+              <label for="jatekosszam">Játékosszám</label>
+              <div class="row">
+                <!-- Min -->
+                <div class="col">
+                  <input type="text" class="form-control" id="minjatekosszam" aria-describedby="" placeholder="Minimum Játékosszám">
+                </div>
+
+                <!-- Max -->
+                <div class="col">
+                  <input type="text" class="form-control" id="maxjatekosszam" aria-describedby="" placeholder="Maximum Játékosszám">
+                </div>
+              </div>
+
+              <!-- Hossza -->
+              <label for="hossz">Időtartama</label>
+              <div class="row">
+                <!-- Min -->
+                <div class="col">
+                  <input type="text" class="form-control" id="minido" aria-describedby="" placeholder="Minimum Időtartam">
+                </div>
+
+                <!-- Max -->
+                <div class="col">
+                  <input type="text" class="form-control" id="maxido" aria-describedby="" placeholder="Maximum Időtartam">
+                </div>
+              </div>
+
+              <!-- Korhatár -->
+              <label for="tarsasKorhatara">Minimum korhatár</label>
+              <input type="text" class="form-control" id="tarsasKorhatara" aria-describedby="korhelp" placeholder="Társasjáték korhatára">
+              <small id="korhelp" class="form-text text-muted">Amennyiben nincs korhatárbesorolás 0-t adjon meg!</small>
+
+              <!-- Indexkép -->
+              <div class="form-group">
+                <label for="indexkep">Társasjáték indexképe</label>
+                <input type="file" class="form-control-file" id="indexkep">
+              </div>
+
+              <!-- Submit gomb -->
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn">Hozzáadás</button>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
 
         <form action="upload.php" method="post">
             <label for="cim">Cím:</label>

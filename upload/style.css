@@ -2,3 +2,30 @@ main{
     background-color: blueviolet;
     color: white;
 }
+
+.form-box{
+    
+    padding: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    width: 50%;
+    
+}
+
+button{
+    background-color: blueviolet !important;
+    color: white !important;
+}
+
+.form-box-fejlec{
+    background-color: blueviolet;
+    color: white;
+
+    padding: 1rem 1rem 10px 1rem;
+    margin-bottom: 1rem;
+}
