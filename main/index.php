@@ -14,21 +14,40 @@
     <!-- JQuery import -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <title>Hello, world!</title>
+    <title>Társasjátékok</title>
 
   </head>
 
   <body>
     <main>
+      <nav class="navbar d-flex-row justify-content-between">
+
+        <div class="d-inline-flex align-items-baseline">
+          <a class="navbar-brand" href="index.php"><h2 style="color:white;">Társasjátékok</h2></a>
+
+          <a class="nav-link" href="../upload/upload.html" style="color:white;">Új hozzáadása</a>
+        </div>
+
+        <form class="form-inline my-2">
+          <input class="form-control mr-sm-4" type="search" placeholder="Keresés" aria-label="Search" id="kereso">
+        </form>
+
+      </nav>
+
       <!-- Oldal fejléce -->
+      <!--
       <header class="py-3 mb-3 border-bottom">
         <div class="container-fluid d-grid gap-3 align-items-center row" style="grid-template-columns: 1fr 2fr;">
 
           <div class="align-items-center col-4 d-none d-md-inline-block">
-            <h1 class="weboldalcim">Társasjátékok</h1>
+            <a href="index.php"><h2 class="weboldalcim">Társasjátékok</h2></a>
+          </div>
+
+          <div class="align-items-center col-4 d-none d-md-inline-block">
+            <a href="index.php"><h2 class="weboldalcim">Hozzáadás</h2></a>
           </div>
           
-          <div class="align-items-center col-12 col-md-8 d-inline-block">
+          <div class="align-items-center col-8 col-md-4 d-inline-block">
             <form class="w-100 me-3" role="search">
               <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="kereso">
             </form>
@@ -36,6 +55,7 @@
 
         </div>
       </header>
+      -->
     </main>
   <section class="container py-3">
 
