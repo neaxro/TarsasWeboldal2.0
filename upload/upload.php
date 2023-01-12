@@ -15,6 +15,8 @@
         $temp_indexkep = $_FILES["indexkep"]["tmp_name"];
         $kepekMappa = "../indexkepek/" . $indexkep;
 
+        $rovid_leiras = $_POST["leiras"];
+
         // SQL kapcsolat es beszurasa
         $servername = "192.168.1.24";
         $username = "tarsasjatek_web";
@@ -29,7 +31,7 @@
         }
 
         //$sql = "INSERT INTO Tarsasok (kep) VALUES ('$indexkep');";
-        $sql = "INSERT INTO Tarsasok (kep, cim, letszam_min, letszam_max, ido_min, ido_max, eletkor_min, rovid_leiras) VALUES ('$indexkep', '$cim', '$min_jatekos', '$max_jatekos', '$min_hossz', '$max_hossz', '$korhatar')"
+        $sql = "INSERT INTO Tarsasok (kep, cim, letszam_min, letszam_max, ido_min, ido_max, eletkor_min, rovid_leiras) VALUES ('$indexkep', '$cim', '$min_jatekos', '$max_jatekos', '$min_hossz', '$max_hossz', '$korhatar', '$rovid_leiras');";
 
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
