@@ -78,12 +78,19 @@
                 <small id="korhelp" class="form-text text-muted">Amennyiben nincs korhatárbesorolás 0-t adjon meg!</small>
                 <hr>
 
+                <!-- Rövid leírás -->
+                <div class="form-group">
+                  <label for="rovidLeiras">Rövid leírás</label>
+                  <textarea name="leiras" class="form-control" aria-label="With textarea" id="rovidLeiras"
+                    maxlength="200" rows="3" style="resize: none"></textarea>
+                </div>
+                
                 <!-- Indexkép -->
                 <div class="form-group">
                   <label for="indexkep">Társasjáték indexképe</label>
                   <input name="indexkep" type="file" class="form-control-file" id="indexkep">
                 </div>
-
+                
                 <!-- Submit gomb -->
                 <div class="d-flex justify-content-center">
                   <button type="submit" class="btn">Hozzáadás</button>

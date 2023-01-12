@@ -28,7 +28,8 @@
             die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "INSERT INTO Tarsasok (kep) VALUES ('$indexkep');";
+        //$sql = "INSERT INTO Tarsasok (kep) VALUES ('$indexkep');";
+        $sql = "INSERT INTO Tarsasok (kep, cim, letszam_min, letszam_max, ido_min, ido_max, eletkor_min, rovid_leiras) VALUES ('$indexkep', '$cim', '$min_jatekos', '$max_jatekos', '$min_hossz', '$max_hossz', '$korhatar')"
 
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";
