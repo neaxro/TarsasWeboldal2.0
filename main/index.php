@@ -20,6 +20,7 @@
 
   <body>
     <main>
+      <!-- Oldal fejléce -->
       <nav class="navbar d-flex-row justify-content-between">
 
         <div class="d-inline-flex align-items-baseline">
@@ -33,112 +34,34 @@
         </form>
 
       </nav>
-
-      <!-- Oldal fejléce -->
-      <!--
-      <header class="py-3 mb-3 border-bottom">
-        <div class="container-fluid d-grid gap-3 align-items-center row" style="grid-template-columns: 1fr 2fr;">
-
-          <div class="align-items-center col-4 d-none d-md-inline-block">
-            <a href="index.php"><h2 class="weboldalcim">Társasjátékok</h2></a>
-          </div>
-
-          <div class="align-items-center col-4 d-none d-md-inline-block">
-            <a href="index.php"><h2 class="weboldalcim">Hozzáadás</h2></a>
-          </div>
-          
-          <div class="align-items-center col-8 col-md-4 d-inline-block">
-            <form class="w-100 me-3" role="search">
-              <input type="search" class="form-control" placeholder="Search..." aria-label="Search" id="kereso">
-            </form>
-          </div>
-
-        </div>
-      </header>
-      -->
     </main>
-  <section class="container py-3">
 
-  <div class="row">
-    
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        
-        <img src="Forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
+    <div class="container">
+      <div class="row justify-content-around ">
 
-        <div class="card-body">
-          <h5>Exploding Kittens</h5>
-          <hr>
-          <img src="Forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
-          <hr>
-          <img src="Forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
-          <hr>
-          <img src="Forrasok/icon_eletkor.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">7+</p>
-          <hr>
-          <p class="card-text">Some quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="col col-sm-3 col-md-4" style="width: 18rem; height: 30rem; background-color: blue; margin: 10px;"></div>
+        <div class="col col-sm-3 col-md-4" style="width: 18rem; height: 30rem; background-color: blue; margin: 10px;"></div>
+        <div class="col col-sm-3 col-md-4" style="width: 18rem; height: 30rem; background-color: blue; margin: 10px;"></div>
+        <div class="col col-sm-3 col-md-4" style="width: 18rem; height: 30rem; background-color: blue; margin: 10px;"></div>
+        <div class="col col-sm-3 col-md-4" style="width: 18rem; height: 30rem; background-color: blue; margin: 10px;"></div>
+        <!--
+        <div class="card" style="width: 18rem;">
+          <img src="../forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5>Exploding Kittens</h5>
+            <hr>
+            <img src="../forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
+            <hr>
+            <img src="../forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
+            <hr>
+            <img src="../forrasok/icon_eletkor.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">7+</p>
+            <hr>
+            <p class="card-text">Some quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div> -->
+
         </div>
-      </div>
     </div>
-
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        
-        <img src="Forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
-
-        <div class="card-body">
-          <h5>Exploding Dogs</h5>
-          <hr>
-          <img src="Forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
-          <hr>
-          <img src="Forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
-          <hr>
-          <img src="Forrasok/icon_eletkor.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">7+</p>
-          <hr>
-          <p class="card-text">Some quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        
-        <img src="Forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
-
-        <div class="card-body">
-          <h5>Bang!</h5>
-          <hr>
-          <img src="Forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
-          <hr>
-          <img src="Forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
-          <hr>
-          <img src="Forrasok/icon_eletkor.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">7+</p>
-          <hr>
-          <p class="card-text">Some quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        
-        <img src="Forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
-
-        <div class="card-body">
-          <h5>Schottentoten</h5>
-          <hr>
-          <img src="Forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
-          <hr>
-          <img src="Forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
-          <hr>
-          <img src="Forrasok/icon_eletkor.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">7+</p>
-          <hr>
-          <p class="card-text">Some quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to buSome quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  </div>
 
     <script src="script.js" type="text/javascript"></script>
   </body>
