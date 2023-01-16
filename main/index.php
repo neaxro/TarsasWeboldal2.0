@@ -25,7 +25,7 @@
         <div class="d-inline-flex align-items-baseline">
           <a class="navbar-brand" href="index.php"><h2 style="color:white;">Társasjátékok</h2></a>
 
-          <a class="nav-link" href="../upload/upload.html" style="color:white;">Új hozzáadása</a>
+          <a class="nav-link" href="../upload/upload.php" style="color:white;">Új hozzáadása</a>
         </div>
 
         <form class="form-inline my-2">
@@ -72,7 +72,7 @@
             echo '</div>';
           }
         } else {
-          echo "0 results";
+          echo "Nincs találat!";
         }
         $conn->close();
       ?>
