@@ -52,7 +52,7 @@
           die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT * FROM Tarsasok;";
+        $sql = "SELECT * FROM Tarsasok ORDER BY cim;";
         $result = $conn->query($sql);
 
         // Adatok listazasa
@@ -60,11 +60,6 @@
           while($row = $result->fetch_assoc()) {
 
             // Adatok kartyakban valo megjelenitese aza oldalon
-
-
-            //echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-            
-
             echo '<div class="card" style="width: 18rem;">';
             echo '<img src="../indexkepek/'.$row["kep"].'" class="card-img-top" alt="...">';
             echo '<div class="card-body">';
@@ -72,7 +67,7 @@
             echo '<img src="../forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">'.$row["letszam_min"].'-'.$row["letszam_max"].'</p> <hr>';
             echo '<img src="../forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">'.$row["ido_min"].' - '.$row["ido_max"].' perc</p> <hr>';
             echo '<img src="../forrasok/icon_eletkor.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">'.$row["eletkor_min"].'+</p> <hr>';
-            echo "<p class='card-text'>".$row["rovid_leiras"]."</p>";
+            echo "<p class='card-text' style='text-align: justify;'>".$row["rovid_leiras"]."</p>";
             echo '</div>';
             echo '</div>';
           }
@@ -86,20 +81,3 @@
     <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
-
-<!--
-  <div class="card" style="width: 18rem;">
-          <img src="../forrasok/pelda_kep.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5>Exploding Kittens</h5>
-            <hr>
-            <img src="../forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">3-5</p>
-            <hr>
-            <img src="../forrasok/icon_ido.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">15 perc</p>
-            <hr>
-            <img src="../forrasok/icon_eletkor.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">7+</p>
-            <hr>
-            <p class="card-text">Some quick example text to buSome d make up the bulk of the card's content.</p>
-          </div>
-        </div>
--->
