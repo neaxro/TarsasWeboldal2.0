@@ -85,12 +85,16 @@
             ?>
             
             <!-- TODO: Validacio -->
-            <form method="post" enctype="multipart/form-data">
+            <form method="post" enctype="multipart/form-data" class="needs-validation">
               <div class="form-group px-3">
+
                 <!-- Címe -->
                 <label for="tarsasCime">Társas neve</label>
-                <input name="cim" type="text" class="form-control" id="tarsasCime" aria-describedby="cimhelp" placeholder="Társasjáték neve">
-                <small id="cimhelp" class="form-text text-muted">Maximum 30 karakter hosszúságú lehet a cím!</small>
+                <input name="cim" type="text" class="form-control" id="tarsasCime" aria-describedby="cimhelp" placeholder="Társasjáték neve" maxlength="45" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Looks baaad!</div>
+                <small id="cimhelp" class="form-text text-muted">Maximum 45 karakter hosszúságú lehet a cím!</small>
+                
                 <hr>
 
                 <!-- Játékosszám -->
@@ -98,12 +102,12 @@
                 <div class="row">
                   <!-- Min -->
                   <div class="col">
-                    <input name="min_jatekos" type="text" class="form-control" id="minjatekosszam" aria-describedby="" placeholder="Minimum Játékosszám">
+                    <input name="min_jatekos" type="number" class="form-control" id="minjatekosszam" aria-describedby="" placeholder="Minimum Játékosszám" required>
                   </div>
 
                   <!-- Max -->
                   <div class="col">
-                    <input name="max_jatekos" type="text" class="form-control" id="maxjatekosszam" aria-describedby="" placeholder="Maximum Játékosszám">
+                    <input name="max_jatekos" type="number" class="form-control" id="maxjatekosszam" aria-describedby="" placeholder="Maximum Játékosszám" required>
                   </div>
                 </div>
                 <hr>
@@ -113,19 +117,19 @@
                 <div class="row">
                   <!-- Min -->
                   <div class="col">
-                    <input name="min_hossz" type="text" class="form-control" id="minido" aria-describedby="" placeholder="Minimum Időtartam">
+                    <input name="min_hossz" type="number" class="form-control" id="minido" aria-describedby="" placeholder="Minimum Időtartam" required>
                   </div>
 
                   <!-- Max -->
                   <div class="col">
-                    <input name="max_hossz" type="text" class="form-control" id="maxido" aria-describedby="" placeholder="Maximum Időtartam">
+                    <input name="max_hossz" type="number" class="form-control" id="maxido" aria-describedby="" placeholder="Maximum Időtartam" required>
                   </div>
                 </div>
                 <hr>
 
                 <!-- Korhatár -->
                 <label for="tarsasKorhatara">Minimum korhatár</label>
-                <input name="korhatar" type="text" class="form-control" id="tarsasKorhatara" aria-describedby="korhelp" placeholder="Társasjáték korhatára">
+                <input name="korhatar" type="number" class="form-control" id="tarsasKorhatara" aria-describedby="korhelp" placeholder="Társasjáték korhatára" required>
                 <small id="korhelp" class="form-text text-muted">Amennyiben nincs korhatárbesorolás 0-t adjon meg!</small>
                 <hr>
 
@@ -136,16 +140,16 @@
                     maxlength="2500" rows="3" style="resize: none"></textarea>
                 </div>
                 <hr>
-                
-                <div class="d-flex justify-content-between align-items-center">
+
+                <div class="container row align-items-center">
                   <!-- Indexkép -->
-                  <div class="form-group">
+                  <div class="form-group col-10">                 
                     <label for="indexkep">Társasjáték indexképe</label>
-                    <input name="indexkep" type="file" class="form-control-file" id="indexkep">
+                    <input name="indexkep" type="file" class="form-control-file" id="indexkep" required>
                   </div>
                 
                   <!-- Submit gomb -->
-                  <div>
+                  <div class="col-2">
                     <button type="submit" class="btn" name="upload">Hozzáadás</button>
                   </div>
 
