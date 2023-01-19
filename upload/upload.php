@@ -143,11 +143,16 @@
 
                 <div class="container row align-items-center">
                   <!-- Indexkép -->
-                  <div class="form-group col-10">                 
+                  <div class="form-group col-7">
                     <label for="indexkep">Társasjáték indexképe</label>
                     <input name="indexkep" type="file" class="form-control-file" id="indexkep" required>
                   </div>
-                
+
+                  <!-- Biztonsági kód -->
+                  <div class="col-3">
+                    <input name="biztonsagiKod" type="password" class="form-control" id="biztonsagiKod" placeholder="Biztonsági kód" maxlength="14" required>
+                  </div>
+                  
                   <!-- Submit gomb -->
                   <div class="col-2">
                     <button type="submit" class="btn" name="upload">Hozzáadás</button>
