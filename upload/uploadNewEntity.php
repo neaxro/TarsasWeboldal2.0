@@ -27,9 +27,9 @@
         $rovid_leiras = $_POST["leiras"];
 
         // SQL kapcsolat es beszurasa
-        $servername = "192.168.1.24";
-        $username = "tarsasjatek_web";
-        $password = "Asdasd11#";
+        $servername = "172.17.0.2";
+        $username = "root";
+        $password = "Asdasd11";
         $dbname = "tarsasjatekok";
 
         // Create connection
