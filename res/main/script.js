@@ -10,8 +10,6 @@ $(document).ready(function(){
                 if(adottSzoveg.includes(szoveg)){
                     $(this).show();
                 }
-
-                //console.log(adottSzoveg + " <--? " + szoveg + " : " + adottSzoveg.includes(szoveg));
             });
         }
         else{
