@@ -27,7 +27,7 @@
         $rovid_leiras = $_POST["leiras"];
 
         // SQL kapcsolat es beszurasa
-        $servername = "172.17.0.2";
+        $servername = "172.17.0.3";
         $username = "root";
         $password = "Asdasd11";
         $dbname = "tarsasjatekok";
@@ -51,9 +51,9 @@
 
         // Kep mentese mappaba
         if (move_uploaded_file($temp_indexkep, $kepekMappa)) {
-            echo '<script>alert("Sikeres hozzáadás!")</script>';
+            echo '<script>alert("Sikeres kép mentés!")</script>';
         } else {
-            echo '<script>alert("Sikertelen művelet!")</script>';
+            echo '<script>alert("Sikertelen kép mentés!")</script>';
         }
 
         $conn->close();
