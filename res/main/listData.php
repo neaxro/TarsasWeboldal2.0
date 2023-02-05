@@ -20,7 +20,7 @@
 
             // Adatok kartyakban valo megjelenitese aza oldalon
             echo '<div class="card" style="width: 18rem;">';
-            echo '<img src="res/indexkepek/'.$row["kep"].'" class="card-img-top" alt="...">';
+            echo '<img src="res/indexkepek/'.$row["kep"].'" class="card-img-top" alt="Nem található kép.">';
             echo '<div class="card-body">';
             echo '<h5>'.$row["cim"].'</h5> <hr>';
             echo '<img src="res/forrasok/icon_emberek.png" class="kartya-magyarazo-ikonok"> <p class="card-text kartya-magyarazo-ikonok-szoveg">'.$row["letszam_min"].'-'.$row["letszam_max"].'</p> <hr>';

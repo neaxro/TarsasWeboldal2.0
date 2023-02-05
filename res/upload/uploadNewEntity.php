@@ -1,4 +1,7 @@
 <?php
+    echo getcwd() . "'\n'";
+
+
     if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['upload'])){
 
         $biztonsagi_kod = $_POST["biztonsagiKod"];
@@ -22,7 +25,9 @@
 
         $indexkep = $_FILES["indexkep"]["name"];
         $temp_indexkep = $_FILES["indexkep"]["tmp_name"];
-        $kepekMappa = "/res/indexkepek/" . $indexkep;
+        $kepekMappa = "/var/www/html/res/indexkepek/" . $indexkep;
+
+        echo $kepekMappa;
 
         $rovid_leiras = $_POST["leiras"];
 
