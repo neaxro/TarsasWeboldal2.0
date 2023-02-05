@@ -34,15 +34,11 @@
         $password = "Asdasd11";
         $dbname = "tarsasjatekok";
 
-        
-
         // Kep mentese mappaba
         $eredmeny = move_uploaded_file($temp_indexkep, $kepekMappa);
-        echo '<script>alert("Eredmeny: '.$eredmeny.'")</script>';
+        //echo '<script>alert("Eredmeny: '.$eredmeny.'")</script>';
 
         if ($eredmeny == 1) {
-            echo '<script>alert("Sikeres kép mentés!")</script>';
-
             // Create connection
             $conn = new mysqli($servername, $username, $password, $dbname);
             // Check connection
@@ -54,16 +50,16 @@
             $sql = "INSERT INTO Tarsasok (kep, cim, letszam_min, letszam_max, ido_min, ido_max, eletkor_min, rovid_leiras) VALUES ('$indexkep', '$cim', '$min_jatekos', '$max_jatekos', '$min_hossz', '$max_hossz', '$korhatar', '$rovid_leiras');";
 
             if ($conn->query($sql) === TRUE) {
-                //echo "New record created successfully";
+                echo '<script>alert("Sikeres társasjáték mentés!")</script>';
             } else {
                 // TODO jobb visszajelzést
-                //echo "Error: " . $sql . "<br>" . $conn->error;
+                echo "Error: " . $sql . "<br>" . $conn->error;
             }
 
             $conn->close();
         }
         else {
-            echo '<script>alert("Sikertelen kép mentés!:'.$_FILES["indexkep"]["error"].'")</script>';
+            echo '"Sikertelen mentés!:'.$_FILES["indexkep"]["error"].'"';
         }
     }
 ?>
