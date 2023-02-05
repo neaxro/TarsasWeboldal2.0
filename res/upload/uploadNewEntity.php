@@ -1,7 +1,4 @@
 <?php
-    echo getcwd() . "'\n'";
-
-
     if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['upload'])){
 
         $biztonsagi_kod = $_POST["biztonsagiKod"];
@@ -37,30 +34,36 @@
         $password = "Asdasd11";
         $dbname = "tarsasjatekok";
 
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        // Check connection
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-
-        //$sql = "INSERT INTO Tarsasok (kep) VALUES ('$indexkep');";
-        $sql = "INSERT INTO Tarsasok (kep, cim, letszam_min, letszam_max, ido_min, ido_max, eletkor_min, rovid_leiras) VALUES ('$indexkep', '$cim', '$min_jatekos', '$max_jatekos', '$min_hossz', '$max_hossz', '$korhatar', '$rovid_leiras');";
-
-        if ($conn->query($sql) === TRUE) {
-            //echo "New record created successfully";
-        } else {
-            // TODO jobb visszajelzést
-            //echo "Error: " . $sql . "<br>" . $conn->error;
-        }
+        
 
         // Kep mentese mappaba
-        if (move_uploaded_file($temp_indexkep, $kepekMappa)) {
-            echo '<script>alert("Sikeres kép mentés!")</script>';
-        } else {
-            echo '<script>alert("Sikertelen kép mentés!")</script>';
-        }
+        $eredmeny = move_uploaded_file($temp_indexkep, $kepekMappa);
+        echo '<script>alert("Eredmeny: '.$eredmeny.'")</script>';
 
-        $conn->close();
+        if ($eredmeny == 1) {
+            echo '<script>alert("Sikeres kép mentés!")</script>';
+
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            //$sql = "INSERT INTO Tarsasok (kep) VALUES ('$indexkep');";
+            $sql = "INSERT INTO Tarsasok (kep, cim, letszam_min, letszam_max, ido_min, ido_max, eletkor_min, rovid_leiras) VALUES ('$indexkep', '$cim', '$min_jatekos', '$max_jatekos', '$min_hossz', '$max_hossz', '$korhatar', '$rovid_leiras');";
+
+            if ($conn->query($sql) === TRUE) {
+                //echo "New record created successfully";
+            } else {
+                // TODO jobb visszajelzést
+                //echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+
+            $conn->close();
+        }
+        else {
+            echo '<script>alert("Sikertelen kép mentés!:'.$_FILES["indexkep"]["error"].'")</script>';
+        }
     }
 ?>
