@@ -22,7 +22,7 @@
 
         $indexkep = $_FILES["indexkep"]["name"];
         $temp_indexkep = $_FILES["indexkep"]["tmp_name"];
-        $kepekMappa = "../indexkepek/" . $indexkep;
+        $kepekMappa = "/res/indexkepek/" . $indexkep;
 
         $rovid_leiras = $_POST["leiras"];
 
