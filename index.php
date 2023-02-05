@@ -23,9 +23,9 @@
       <nav class="navbar d-flex-row justify-content-between">
 
         <div class="d-inline-flex align-items-baseline">
-          <a class="navbar-brand" href="index.php"><h2 style="color:white;">Társasjátékok</h2></a>
+          <a class="navbar-brand" href="index.php"><h2 style="color:white;">Főoldal</h2></a>
 
-          <a class="nav-link" href="./res/upload/upload.php" style="color:white;">Új hozzáadása</a>
+          <a class="nav-link" href="./res/upload/upload.php" style="color:white;">Társasjátékok hozzáadása</a>
         </div>
 
         <form class="form-inline my-2">

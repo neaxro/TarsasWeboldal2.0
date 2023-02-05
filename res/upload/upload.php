@@ -17,9 +17,9 @@
         <main>
             <!-- Oldal fejléce -->
             <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="upload.php"><h2>Társasjátékok hozzáadása</h2></a>
+              <a class="nav-link" href="../../index.php"><h2>Főoldal</h2><span class="sr-only"></span></a>
 
-              <a class="nav-link" href="../../index.php">Főoldal<span class="sr-only"></span></a>
+              <a class="navbar-brand" href="upload.php">Társasjátékok hozzáadása</a>
             </nav>
         </main>
 
