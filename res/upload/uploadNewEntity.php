@@ -24,7 +24,7 @@
         $temp_indexkep = $_FILES["indexkep"]["tmp_name"];
         $kepekMappa = "/var/www/html/res/indexkepek/" . $indexkep;
 
-        echo $kepekMappa;
+        //echo $kepekMappa;
 
         $rovid_leiras = $_POST["leiras"];
 
